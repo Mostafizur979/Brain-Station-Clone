@@ -20,36 +20,96 @@
       <div class=" hover:text-black cursor-pointer">Contact Us</div>
     </div>
    </div>
-   <div>
-     <img src="brainstation_share.png" class="w-[100%] h-[583px] ">
+   <div class="overflow-hidden">
+    <div class="flex banner duration-[2s]">
+      <img src="brainstation_share.png" class="min-w-[100%] h-[583px] object-cover">
+      <img src="brain.webp" class="min-w-[100%] h-[583px] object-cover ">
+      <img src="brain2.webp" class="min-w-[100%] h-[583px] object-cover ">
+    </div>
    </div>
+
+   <script>
+      let bannerClass=document.querySelector('.banner');
+      setInterval(function () {
+        tmp++; 
+        if (tmp >= bannerClass.children.length) {
+          tmp = 0;
+      
+        }
+
+        bannerClass.style.transform = `translateX(${newPos}%)`;
+        console.log(bannerClass.children.length);
+      }, 3000);
+   </script>
    <section>
     <div class="max-w-[1170px] py-[60px] mx-auto flex gap-[2%] font-[Poppins]">
       <div class="basis-[18%]">
         <img src="https://brainstation-23.com/wp-content/uploads/2021/01/11.png" class="w-[64px] h-[64px] mx-auto">
-        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> 8+ </p>
+        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number">  </p>
         <p class="text-[15px]  text-center">Tech Partners</p>
+
       </div>
       <div class="basis-[18%]">
         <img src="https://brainstation-23.com/wp-content/uploads/2021/01/clock.png" class="w-[64px] h-[64px] mx-auto">
-        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> 18+ </p>
+        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> </p>
         <p class="text-[15px]  text-center">Years of Experience</p>
       </div>
       <div class="basis-[18%]">
         <img src="https://brainstation-23.com/wp-content/uploads/2021/01/coronavirus.png" class="w-[64px] h-[64px] mx-auto">
-        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> 30+ </p>
+        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> </p>
         <p class="text-[15px]  text-center">Countries Served</p>
       </div>
       <div class="basis-[18%]">
         <img src="https://brainstation-23.com/wp-content/uploads/2021/01/11.png" class="w-[64px] h-[64px] mx-auto">
-        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> 800+ </p>
+        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> </p>
         <p class="text-[15px]  text-center">Professionals</p>
       </div>
       <div class="basis-[18%]">
         <img src="https://brainstation-23.com/wp-content/uploads/2021/01/check-1.png" class="w-[64px] h-[64px] mx-auto">
-        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> 2500+ </p>
+        <p class="text-[30px] font-bold text-[#009CCE] text-center increase-number"> </p>
         <p class="text-[15px]  text-center">Project Completed</p>
       </div>
+      <script>
+        let increaseClass=document.querySelectorAll(".increase-number");
+        let num=[0,0,0,0,0];
+        let max=[8,18,30,800,2500];
+        setInterval(()=>{
+          num[0]++;
+          if(num[0]<=max[0]){
+            increaseClass[0].innerHTML=num[0]+"+";
+          }
+  
+        },100);
+        setInterval(()=>{
+          num[1]=num[1]+2;
+          if(num[1]<=max[1]){
+            increaseClass[1].innerHTML=num[1]+"+";
+          }
+  
+        },100);
+        setInterval(()=>{
+          num[2]=num[2]+3;
+          if(num[2]<=max[2]){
+            increaseClass[2].innerHTML=num[2]+"+";
+          }
+  
+        },60);
+        setInterval(()=>{
+          num[3]=num[3]+8;
+          if(num[3]<=max[3]){
+            increaseClass[3].innerHTML=num[3]+"+";
+          }
+  
+        },2);
+
+        setInterval(()=>{
+          num[4]=num[4]+10;
+          if(num[4]<=max[4]){
+            increaseClass[4].innerHTML=num[4]+"+";
+          }
+  
+        },1);
+      </script>
     </div>
 
     <h1 class="text-[55px] font-[Poppins] font-semibold text-center">Technology Partners</h1>
@@ -254,8 +314,6 @@
       <div class="max-w-[142px]">
         <img src="https://brainstation-23.com/wp-content/uploads/2019/03/British-American-Tobacco-Logo-150x150.png">
       </div>
-
-
 
     </div>
 
