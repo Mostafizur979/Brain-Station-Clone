@@ -9,7 +9,6 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-orange-900: oklch(0.408 0.123 38.172);
     --color-yellow-900: oklch(0.421 0.095 57.708);
-    --color-green-900: oklch(0.393 0.095 152.535);
     --color-blue-800: oklch(0.424 0.199 265.638);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-600: oklch(0.446 0.03 256.802);
@@ -368,9 +367,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-\[-5px\] {
-    margin-top: -5px;
-  }
   .mt-\[-10px\] {
     margin-top: -10px;
   }
@@ -515,12 +511,6 @@
   .h-\[200px\] {
     height: 200px;
   }
-  .h-\[250px\] {
-    height: 250px;
-  }
-  .h-\[297px\] {
-    height: 297px;
-  }
   .h-\[306px\] {
     height: 306px;
   }
@@ -550,9 +540,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1018,26 +1005,17 @@
   .gap-\[15px\] {
     gap: 15px;
   }
-  .gap-\[20px\] {
-    gap: 20px;
-  }
   .gap-\[30px\] {
     gap: 30px;
   }
   .gap-\[35px\] {
     gap: 35px;
   }
-  .gap-\[40px\] {
-    gap: 40px;
-  }
   .gap-\[60px\] {
     gap: 60px;
   }
   .gap-\[80px\] {
     gap: 80px;
-  }
-  .gap-\[100px\] {
-    gap: 100px;
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1198,10 +1176,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-0 {
-    border-style: var(--tw-border-style);
-    border-width: 0px;
-  }
   .border-x {
     border-inline-style: var(--tw-border-style);
     border-inline-width: 1px;
@@ -1276,14 +1250,8 @@
   .bg-\[\#ECEEEF\] {
     background-color: #ECEEEF;
   }
-  .bg-\[\#FCFCFC\] {
-    background-color: #FCFCFC;
-  }
   .bg-\[\#FFFAF5\] {
     background-color: #FFFAF5;
-  }
-  .bg-\[\#FFFFFF\] {
-    background-color: #FFFFFF;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1293,15 +1261,6 @@
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
-  }
-  .bg-green-900 {
-    background-color: var(--color-green-900);
-  }
-  .bg-green-900\/40 {
-    background-color: color-mix(in oklab, var(--color-green-900) 40%, transparent);
-  }
-  .bg-orange-900 {
-    background-color: var(--color-orange-900);
   }
   .bg-orange-900\/40 {
     background-color: color-mix(in oklab, var(--color-orange-900) 40%, transparent);
@@ -1317,9 +1276,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-yellow-900 {
-    background-color: var(--color-yellow-900);
   }
   .bg-yellow-900\/40 {
     background-color: color-mix(in oklab, var(--color-yellow-900) 40%, transparent);
@@ -1339,17 +1295,11 @@
   .bg-\[url\(\'dubai\.webp\'\)\] {
     background-image: url('dubai.webp');
   }
-  .bg-\[url\(\'germany\.jpg\'\)\] {
-    background-image: url('germany.jpg');
-  }
   .bg-\[url\(\'germany\.webp\'\)\] {
     background-image: url('germany.webp');
   }
   .bg-\[url\(\'usa\.jpg\'\)\] {
     background-image: url('usa.jpg');
-  }
-  .bg-\[url\(\'usabranch\.jpg\'\)\] {
-    background-image: url('usabranch.jpg');
   }
   .bg-none {
     background-image: none;
@@ -1537,9 +1487,6 @@
   }
   .pt-\[5px\] {
     padding-top: 5px;
-  }
-  .pt-\[10px\] {
-    padding-top: 10px;
   }
   .pt-\[60px\] {
     padding-top: 60px;
@@ -2228,20 +2175,6 @@
       }
     }
   }
-  .hover\:w-\[1100px\] {
-    &:hover {
-      @media (hover: hover) {
-        width: 1100px;
-      }
-    }
-  }
-  .hover\:w-\[1300px\] {
-    &:hover {
-      @media (hover: hover) {
-        width: 1300px;
-      }
-    }
-  }
   .hover\:scale-\[80\%\] {
     &:hover {
       @media (hover: hover) {
@@ -2253,13 +2186,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: color-mix(in oklab, var(--color-blue-800) 30%, transparent);
-      }
-    }
-  }
-  .hover\:text-\[12px\] {
-    &:hover {
-      @media (hover: hover) {
-        font-size: 12px;
       }
     }
   }
@@ -2276,12 +2202,6 @@
         --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
-    }
-  }
-  .focus\:border-0 {
-    &:focus {
-      border-style: var(--tw-border-style);
-      border-width: 0px;
     }
   }
   .sm\:w-\[175px\] {

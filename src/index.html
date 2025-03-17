@@ -30,13 +30,13 @@
 
    <script>
       let bannerClass=document.querySelector('.banner');
+      let tmp=0;
       setInterval(function () {
         tmp++; 
         if (tmp >= bannerClass.children.length) {
           tmp = 0;
-      
         }
-
+        let newPos = -100 * tmp;
         bannerClass.style.transform = `translateX(${newPos}%)`;
         console.log(bannerClass.children.length);
       }, 3000);
